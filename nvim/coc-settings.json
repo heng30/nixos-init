@@ -1,0 +1,69 @@
+{
+  "tsserver.log": "off",
+  "tsserver.trace.server": "off",
+  "coc.preferences.formatOnSaveFiletypes": ["dart"],
+
+  "languageserver": {
+    "ccls": {
+      "command": "ccls",
+      "args": ["--log-file=/tmp/ccls.log", "-v=1"],
+      "filetypes": ["c", "cc", "cpp", "c++", "objc", "objcpp"],
+      "rootPatterns": [".ccls", "Makefile", "compile_commands.json"],
+      "initializationOptions": {
+        "cache": {
+          "directory": "/tmp/ccls",
+          "format": "json"
+        },
+        "index": { "threads": 4 }
+      }
+    },
+    "rust": {
+      "command": "rust-analyzer",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml"]
+    },
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod"],
+      "filetypes": ["go"]
+    },
+    "zig" : {
+      "command": "zls",
+      "rootPatterns": ["build.zig"],
+      "filetypes": ["zig"]
+    },
+    "dockerfile": {
+      "command": "docker-langserver",
+      "filetypes": ["dockerfile"],
+      "args": ["--stdio"]
+    },
+    "haskell": {
+      "command": "haskell-language-server-wrapper-Linux",
+      "args": ["--lsp"],
+      "rootPatterns": [
+        "*.cabal",
+        "stack.yaml",
+        "cabal.project",
+        "package.yaml",
+        "hie.yaml"
+      ],
+      "filetypes": ["haskell", "lhaskell"]
+    },
+    "motoko": {
+      "command": "dfx",
+      "args": ["_language-service --force-tty"],
+      "filetypes": ["gdmo"]
+    },
+    "slint": {
+      "command": "slint-lsp",
+      "args": [],
+      "filetypes": ["slint"]
+    },
+    "languageserver": {
+      "nixd": {
+        "command": "nixd",
+        "filetypes": ["nix"]
+      }
+    }
+  }
+}

@@ -1,0 +1,89 @@
+# just is a command runner, Justfile is very similar to Makefile, but simpler.
+
+set shell := ["zsh", "-c"]
+
+config:
+	nvim Justfile
+
+switch:
+	sudo nixos-rebuild switch
+
+switch-verbose:
+	sudo nixos-rebuild switch --show-trace -L -v
+
+up:
+	nix flake update
+
+repl:
+	nix repl -f flake:nixpkgs
+
+flake-config:
+	nvim flake.nix
+
+home-config:
+	nvim default.nix
+
+add-pkgs:
+	nvim ./home/packages.nix
+
+os-config:
+	nvim ./configuration.nix
+
+dwm-config:
+	nvim ../dwm-6.2/config.def.h
+
+vi-config:
+	nvim ../nvim/init.vim
+
+list-generations:
+	nixos-rebuild list-generations --json
+
+switch-with-proxy:
+	proxychains4 -f ../proxychains.conf sudo nixos-rebuild switch
+
+search pkg:
+	nix-env -qaP {{pkg}}
+
+garbage:
+	sudo nix-collect-garbage -d
+
+delete-pkg pkg:
+	nix-store --delete {{pkg}} || echo "Maybe you should remove the `result folder` and then try again"
+
+enable-proxy:
+	sudo nix-proxy.sh enable
+
+disable-proxy:
+	sudo nix-proxy.sh disable
+
+sysinfo:
+	nix run nixpkgs#neofetch
+
+show-ports:
+	netstat -naultp
+
+tmain:
+	tmux new-session -A -s main
+
+tslave:
+	tmux new-session -A -s slave
+
+screenkey:
+	screenkey -g 600x2000 --opacity=0.5 -s small
+
+find-pkg name:
+	find /nix/store -name {{name}}
+
+pkg-dependencies pkg:
+	nix-store -q --references `which {{pkg}}`
+
+pkg-reverse-dependencies pkg:
+	nix-store -q --referrers `which {{pkg}}`
+
+delete-all-nix-build-pkgs:
+	sudo rm /nix/var/nix/gcroots/auto/*
+	sudo nix-collect-garbage -d
+
+music-player:
+	amberol &
+
