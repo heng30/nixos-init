@@ -3,6 +3,7 @@
 LOC=$(readlink -f "$0")
 CUR_PATH=$(dirname "$LOC")
 
+sudo mv /etc/wpa_supplicant.conf /etc/wpa_supplicant.conf.bak
 sudo ln -s $CUR_PATH/wpa_supplicant.conf /etc/wpa_supplicant.conf
 
 sudo cp -f /etc/nixos/hardware-configuration.nix $CUR_PATH/nixos
