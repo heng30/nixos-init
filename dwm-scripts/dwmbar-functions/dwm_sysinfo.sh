@@ -1,8 +1,11 @@
 #!/bin/sh
 
 function dwm_temp(){
-	test -f /sys/class/thermal/thermal_zone0/temp || return 0
-	echo "$(head -c 2 /sys/class/thermal/thermal_zone0/temp)℃"
+    test -f /sys/class/thermal/thermal_zone0/temp || return 0
+
+    temps=`ls /sys/class/thermal/thermal_zone*/temp | xargs cat`
+    max=$(printf "%s\n" "${temps[@]}" | sort -nr | head -n 1 | cut -c1-2)
+    echo "$max℃"
 }
 
 function dwm_disk() {
