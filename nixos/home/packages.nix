@@ -77,6 +77,8 @@
     alsa-utils
     autojump
     appimage-run
+    audacity # sound editor
+    blender # 3D editor
     brave
     brightnessctl
     calibre
@@ -88,11 +90,12 @@
     flameshot
     fontconfig
     findutils
-    gimp
+    gimp # picture editor
     gthumb
     gnome.zenity
     htop
     httpie
+    inkscape # vector editor
     jq
     just
     killall
@@ -108,6 +111,7 @@
     sof-firmware
     tree
     unzip
+    unrar-wrapper
     vlc
     zoxide
     patchelf
