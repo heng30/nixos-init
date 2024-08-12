@@ -21,6 +21,7 @@ DIR=$(dirname "$LOC")
 . "$DIR/dwm_simdict_running.sh"
 . "$DIR/dwm_cryptoinfo_running.sh"
 . "$DIR/dwm_blender_running.sh"
+. "$DIR/dwm_fcitx5_running.sh"
 
-xsetroot -name "$(dwm_ping_blog)$(dwm_blender_running)$(dwm_obs_running)$(dwm_simdict_running)$(dwm_cryptoinfo_running)$(dwm_bluetooth_keyboard_connected)|$(dwm_net_type)$(dwm_net_statistics)|$(dwm_sysinfo)|$(dwm_backlight) $(dwm_redshift)|$(dwm_alsa)|$(dwm_bluetooth)|$(dwm_battery)|$(dwm_bitcoin_price)|$(dwm_uptime)|$(dwm_weather)|$(dwm_date)"
+xsetroot -name "$(dwm_ping_blog)$(dwm_blender_running)$(dwm_obs_running)$(dwm_simdict_running)$(dwm_cryptoinfo_running)$(dwm_fcitx5_running)$(dwm_bluetooth_keyboard_connected)|$(dwm_net_type)$(dwm_net_statistics)|$(dwm_sysinfo)|$(dwm_backlight) $(dwm_redshift)|$(dwm_alsa)|$(dwm_bluetooth)|$(dwm_battery)|$(dwm_bitcoin_price)|$(dwm_uptime)|$(dwm_weather)|$(dwm_date)"
 
