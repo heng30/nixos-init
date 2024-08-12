@@ -109,6 +109,7 @@
     redshift
     screenkey
     sof-firmware
+    tldr
     tree
     unzip
     unrar-wrapper
