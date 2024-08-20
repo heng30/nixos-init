@@ -57,7 +57,7 @@ disable-proxy:
 	sudo nix-proxy.sh disable
 
 sysinfo:
-	nix run nixpkgs#neofetch
+	fastfetch
 
 show-ports:
 	netstat -naultp

@@ -46,6 +46,8 @@ export PKG_CONFIG_PATH=$USER_PROFILE/lib/pkgconfig
 export PUB_HOSTED_URL="https://pub.flutter-io.cn"
 export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
 
+export HF_ENDPOINT=https://hf-mirror.com
+
 export ANDROID_HOME=$HOME/Android/Sdk
 export ANDROID_NDK_HOME=$HOME/Android/Sdk/ndk/27.0.12077973
 export ANDROID_NDK=$HOME/Android/Sdk/ndk/27.0.12077973

@@ -38,8 +38,9 @@
     orc.dev
     openssl
     openssl.dev
-    pkg-config
+    openvino # intel deep learning toolkit
     pango.dev
+    pkg-config
     qt5.full
     # qt6.full
     qtcreator
@@ -55,6 +56,7 @@
     vulkan-validation-layers
     xorg.libXft.dev
     xorg.libXmu.dev
+    xorg.libxcb
     xorg.libxcb.dev
     xorg.libX11.dev
     xorg.libXinerama
@@ -63,7 +65,7 @@
 
     ######## python3 ########
     (python3.withPackages
-      (ps: with ps; [ ipython pandas requests pyquery pyyaml ]))
+      (ps: with ps; [ pip ipython pandas requests pyquery pyyaml black ]))
 
     ######## neovim ########
     ccls
@@ -83,6 +85,7 @@
     brightnessctl
     calibre
     evince
+    fastfetch
     feh
     file
     freetype
@@ -114,6 +117,7 @@
     unzip
     unrar-wrapper
     vlc
+    zip
     zoxide
     patchelf
     wpa_supplicant_gui

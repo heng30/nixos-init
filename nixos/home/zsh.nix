@@ -10,6 +10,7 @@
     initExtra = ''
       eval "$(zoxide init zsh)"
       # export OPENSSL_INCLUDE_DIR=${pkgs.openssl.dev}/include
+      export INTEL_OPENVINO_DIR=${pkgs.openvino}
       export CXXFLAGS=-I${pkgs.libGL.dev}/include
       source "$HOME/init/zsh-init.sh"
     '';
