@@ -58,6 +58,7 @@
     xorg.libXmu.dev
     xorg.libxcb
     xorg.libxcb.dev
+    xorg.libX11
     xorg.libX11.dev
     xorg.libXinerama
     xorg.xprop

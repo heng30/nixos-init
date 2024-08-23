@@ -146,6 +146,8 @@ in {
   };
 
   nixpkgs.config.allowUnfree = true;
+   # virtualisation.waydroid.enable = true; # android run environment
+
   environment.variables.EDITOR = "vim";
   environment.systemPackages = with pkgs; [
     vim
