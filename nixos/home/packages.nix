@@ -48,12 +48,13 @@
     sqlite
     sqlite.dev
     typescript
+    upx
     vscode
-    xdotool
     virtualenv
     vulkan-tools
     vulkan-loader.dev
     vulkan-validation-layers
+    xdotool
     xorg.libXft.dev
     xorg.libXmu.dev
     xorg.libxcb

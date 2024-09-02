@@ -146,7 +146,7 @@ in {
   };
 
   nixpkgs.config.allowUnfree = true;
-   # virtualisation.waydroid.enable = true; # android run environment
+  # virtualisation.waydroid.enable = true; # android run environment
 
   environment.variables.EDITOR = "vim";
   environment.systemPackages = with pkgs; [
@@ -205,6 +205,35 @@ in {
     gnupg.agent = {
       enable = true;
       enableSSHSupport = true;
+    };
+
+    nix-ld = {
+      enable = true;
+      libraries = with pkgs; [
+        glib
+        gst_all_1.gstreamer
+        gst_all_1.gst-plugins-base
+        gst_all_1.gst-plugins-good
+        gst_all_1.gst-plugins-bad
+        gst_all_1.gst-plugins-ugly
+        gst_all_1.gst-libav.dev
+        gst_all_1.gst-vaapi.dev
+        gdk-pixbuf
+        graphene
+        harfbuzz
+        libGL
+        libadwaita
+        libunwind
+        openssl
+        xdotool
+        xorg.libXft
+        xorg.libXmu
+        xorg.libxcb
+        xorg.libX11
+        xorg.libXinerama
+        xorg.xprop
+        xorg.xcbproto
+      ];
     };
   };
 
