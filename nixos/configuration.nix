@@ -179,15 +179,15 @@ in {
             cmake
             flutter
             jdk17
-            gtk3.dev
-            gtk4.dev
-            gst_all_1.gstreamer.dev
-            gst_all_1.gst-plugins-base.dev
-            gst_all_1.gst-plugins-good.dev
-            gst_all_1.gst-plugins-bad.dev
-            gst_all_1.gst-plugins-ugly.dev
-            gst_all_1.gst-libav.dev
-            gst_all_1.gst-vaapi.dev
+            gtk3
+            gtk4
+            gst_all_1.gstreamer
+            gst_all_1.gst-plugins-base
+            gst_all_1.gst-plugins-good
+            gst_all_1.gst-plugins-bad
+            gst_all_1.gst-plugins-ugly
+            gst_all_1.gst-libav
+            gst_all_1.gst-vaapi
           ]));
       profile = "export FHS=1";
       runScript = "zsh";
@@ -210,14 +210,16 @@ in {
     nix-ld = {
       enable = true;
       libraries = with pkgs; [
+        cairo
+        fontconfig
         glib
         gst_all_1.gstreamer
         gst_all_1.gst-plugins-base
         gst_all_1.gst-plugins-good
         gst_all_1.gst-plugins-bad
         gst_all_1.gst-plugins-ugly
-        gst_all_1.gst-libav.dev
-        gst_all_1.gst-vaapi.dev
+        gst_all_1.gst-libav
+        gst_all_1.gst-vaapi
         gdk-pixbuf
         graphene
         harfbuzz
@@ -230,7 +232,11 @@ in {
         xorg.libXmu
         xorg.libxcb
         xorg.libX11
+        xorg.libXext
         xorg.libXinerama
+        xorg.libXcursor
+        xorg.libXfixes
+        xorg.libXrender
         xorg.xprop
         xorg.xcbproto
       ];

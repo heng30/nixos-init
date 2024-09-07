@@ -62,3 +62,4 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_NDK/toolchains/llvm/prebuilt/linux-x86_64/bin
 
+export LIBCLANG_PATH=/nix/store/76p62crixgj64nkafy521s4xkv7fjkc1-clang-17.0.6-lib/lib

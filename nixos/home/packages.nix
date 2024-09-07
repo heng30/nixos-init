@@ -6,62 +6,64 @@
     android-tools
     android-studio
     cmake
-    cairo.dev
-    dbus.dev
+    cairo
+    dbus
     flutter
+    fontconfig
     go
     gcc
     gdb
-    gtk3.dev
-    gtk4.dev
+    gtk3
+    gtk4
     gnumake
-    glib.dev
-    gst_all_1.gstreamer.dev
-    gst_all_1.gst-plugins-base.dev
-    gst_all_1.gst-plugins-good.dev
-    gst_all_1.gst-plugins-bad.dev
-    gst_all_1.gst-plugins-ugly.dev
-    gst_all_1.gst-libav.dev
-    gst_all_1.gst-vaapi.dev
-    gdk-pixbuf.dev
-    graphene.dev
-    harfbuzz.dev
+    glib
+    gst_all_1.gstreamer
+    gst_all_1.gst-plugins-base
+    gst_all_1.gst-plugins-good
+    gst_all_1.gst-plugins-bad
+    gst_all_1.gst-plugins-ugly
+    gst_all_1.gst-libav
+    gst_all_1.gst-vaapi
+    gdk-pixbuf
+    graphene
+    harfbuzz
     lua
     llvm
-    libGL.dev
-    libadwaita.dev
-    libunwind.dev
+    libGL
+    libadwaita
+    libclang
+    libunwind
     jdk17
     mesa
     ninja
     nodejs
-    orc.dev
+    orc
     openssl
-    openssl.dev
     openvino # intel deep learning toolkit
-    pango.dev
+    pango
     pkg-config
     qt5.full
-    # qt6.full
     qtcreator
+    rocksdb
     rustup
     sqlite
-    sqlite.dev
     typescript
     upx
     vscode
     virtualenv
     vulkan-tools
-    vulkan-loader.dev
+    vulkan-loader
     vulkan-validation-layers
     xdotool
-    xorg.libXft.dev
-    xorg.libXmu.dev
+    xorg.libXft
+    xorg.libXmu
     xorg.libxcb
-    xorg.libxcb.dev
     xorg.libX11
-    xorg.libX11.dev
+    xorg.libXext
     xorg.libXinerama
+    xorg.libXcursor
+    xorg.libXfixes
+    xorg.libXrender
     xorg.xprop
     xorg.xcbproto
 
@@ -94,6 +96,7 @@
     firefox
     flameshot
     fontconfig
+    fontconfig.dev
     findutils
     gimp # picture editor
     gthumb
