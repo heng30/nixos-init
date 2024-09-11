@@ -13,6 +13,12 @@
       url = "github:heng30/nixos-pkgs";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    # However, it's decided to work for unstatble channel
+    # nix-index-database = {
+    #     url = "github:nix-community/nix-index-database";
+    #     inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
@@ -33,13 +39,14 @@
 
           home-manager.nixosModules.home-manager
           {
-
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
             home-manager.extraSpecialArgs = inputs;
             home-manager.users.blue = import ./home;
             home-manager.backupFileExtension = "backup";
           }
+
+          # nix-index-database.hmModules.nix-index
 
           # add this module, to enable cross-compilation for riscv64
           # { nixpkgs.crossSystem = { system = "riscv64-linux"; }; }

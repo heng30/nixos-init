@@ -39,8 +39,9 @@
     nodejs
     orc
     openssl
-    openvino # intel deep learning toolkit
+    openssl.dev
     pango
+    protobuf
     pkg-config
     qt5.full
     qtcreator
