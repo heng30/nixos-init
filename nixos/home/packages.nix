@@ -7,6 +7,7 @@
     android-studio
     cmake
     cairo
+    cairo.dev
     dbus
     flutter
     fontconfig
@@ -15,8 +16,11 @@
     gdb
     gtk3
     gtk4
+    gtk3.dev
+    gtk4.dev
     gnumake
     glib
+    glib.dev
     gst_all_1.gstreamer
     gst_all_1.gst-plugins-base
     gst_all_1.gst-plugins-good
@@ -25,8 +29,11 @@
     gst_all_1.gst-libav
     gst_all_1.gst-vaapi
     gdk-pixbuf
+    gdk-pixbuf.dev
     graphene
+    graphene.dev
     harfbuzz
+    harfbuzz.dev
     lua
     llvm
     libGL
@@ -41,6 +48,7 @@
     openssl
     openssl.dev
     pango
+    pango.dev
     protobuf
     pkg-config
     qt5.full
@@ -54,6 +62,7 @@
     virtualenv
     vulkan-tools
     vulkan-loader
+    vulkan-loader.dev
     vulkan-validation-layers
     xdotool
     xorg.libXft

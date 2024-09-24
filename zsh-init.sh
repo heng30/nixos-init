@@ -29,6 +29,7 @@ USER_PROFILE=/etc/profiles/per-user/blue
 
 # OPENSSL_PATH=`ldd ${USER_PROFILE}/bin/openssl | grep libssl | cut -d' ' -f3`
 # export OPENSSL_DIR=${OPENSSL_PATH%/*/*}
+# export SLINT_ENABLE_EXPERIMENTAL_FEATURES=1
 
 export JUST_JUSTFILE=/etc/nixos/Justfile
 export NIXPKGS_ALLOW_UNFREE=1
@@ -45,7 +46,6 @@ export CARGO_NET_GIT_FETCH_WITH_CLI=true # cargo使用git下载
 export _JAVA_AWT_WM_NONREPARENTING=1 # 处理android studio 空白屏幕
 export JAVA_HOME=$LIBRARY_PATH/openjdk
 export PKG_CONFIG_PATH=$USER_PROFILE/lib/pkgconfig
-export SLINT_ENABLE_EXPERIMENTAL_FEATURES=1
 
 export PUB_HOSTED_URL="https://pub.flutter-io.cn"
 export FLUTTER_STORAGE_BASE_URL="https://storage.flutter-io.cn"
@@ -58,6 +58,7 @@ export ANDROID_NDK_ROOT=$HOME/Android/Sdk/ndk/27.0.12077973
 
 export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.surrealdb
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_NDK/toolchains/llvm/prebuilt/linux-x86_64/bin
