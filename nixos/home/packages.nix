@@ -64,16 +64,20 @@
     vulkan-loader
     vulkan-loader.dev
     vulkan-validation-layers
+    webkitgtk
     xdotool
     xorg.libXft
     xorg.libXmu
     xorg.libxcb
     xorg.libX11
+    xorg.libX11.dev
     xorg.libXext
     xorg.libXinerama
     xorg.libXcursor
     xorg.libXfixes
     xorg.libXrender
+    xorg.libXi
+    xorg.libXtst
     xorg.xprop
     xorg.xcbproto
 

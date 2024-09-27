@@ -232,6 +232,7 @@ in {
         xorg.libXmu
         xorg.libxcb
         xorg.libX11
+        xorg.libXi
         xorg.libXext
         xorg.libXinerama
         xorg.libXcursor
