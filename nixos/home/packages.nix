@@ -98,6 +98,7 @@
     autojump
     appimage-run
     audacity # sound editor
+    bat
     blender # 3D editor
     brave
     brightnessctl
