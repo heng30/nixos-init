@@ -136,6 +136,7 @@
     tree
     unzip
     unrar-wrapper
+    valgrind
     vlc
     zip
     zoxide

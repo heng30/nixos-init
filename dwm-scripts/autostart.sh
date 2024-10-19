@@ -50,4 +50,3 @@ xset s off &
 
 # 启动st
 st &
-
