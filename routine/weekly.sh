@@ -7,6 +7,3 @@ for path in "${paths[@]}"; do
     git add . && git commit -m "[*]routinely update"
     git push
 done
-
-
-
