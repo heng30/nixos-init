@@ -9,6 +9,7 @@
     cairo
     cairo.dev
     dbus
+    elfutils
     flutter
     fontconfig
     go
@@ -39,7 +40,9 @@
     libGL
     libadwaita
     libclang
+    libelf
     libunwind
+    libxkbcommon
     jdk17
     mesa
     ninja
@@ -80,6 +83,12 @@
     xorg.libXtst
     xorg.xprop
     xorg.xcbproto
+    zlib
+    zlib.dev
+
+    ######## epbf ########
+    bpftool
+    libbpf
 
     ######## python3 ########
     (python3.withPackages
