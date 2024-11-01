@@ -1,5 +1,5 @@
 #!/bin/sh
 
 function dwm_crypto_info() {
-    cat /tmp/crypto-info.data
+    cat /tmp/crypto-info.dat
 }

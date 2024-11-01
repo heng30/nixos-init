@@ -123,6 +123,7 @@
     fontconfig.dev
     findutils
     gimp # picture editor
+    gparted
     gthumb
     gnome.zenity
     htop
